@@ -1,6 +1,8 @@
 import React from 'react';
 import slugify from 'slugify';
 import {USCurrencyFormat} from '../App';
+import './CustomizeItemResult.css'
+
 
 function CustomizeItemResult(props) {
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import {USCurrencyFormat} from '../App';
+import './CartTotal.css'
 
 function CartTotal(props) {
   const total = Object.keys(props.selected).reduce(

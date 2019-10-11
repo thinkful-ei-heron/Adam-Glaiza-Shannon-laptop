@@ -1,6 +1,7 @@
 import React from 'react';
 import CustomizeItemResult from '../CustomizeItemResult/CustomizeItemResult';
 import slugify from 'slugify';
+import './CustomizeItemName.css'
 
 function CustomizeItemName(props) {
   return (

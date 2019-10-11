@@ -1,6 +1,7 @@
 import React from 'react'
 import CartItem from '../CartItem/CartItem'
 import CartTotal from '../CartTotal/CartTotal'
+import './Cart.css'
 
 function Cart(props) {
   return (

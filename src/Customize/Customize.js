@@ -1,5 +1,6 @@
 import React from 'react';
 import CustomizeItemName from '../CustomizeItemName/CustomizeItemName';
+import './Customize.css'
 
 function Customize(props) {
 
