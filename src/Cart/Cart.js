@@ -4,19 +4,25 @@ import CartTotal from '../CartTotal/CartTotal'
 import './Cart.css'
 
 function Cart(props) {
-  return (
-  Object.keys(props.selected).map((feature, idx) => {
-    const featureHash = feature + '-' + idx;
-    const selectedOption = props.selected[feature];
+
     return (
       <section className="main__summary">
         <h2>Your cart</h2>
-        <CartItem featureHash={featureHash} selectedOption={selectedOption} feature={feature} />
+
+         { Object.keys(props.selected).map((feature, idx) => {
+        
+          const featureHash = feature + '-' + idx;
+          const selectedOption = props.selected[feature];
+
+          return ( 
+          <CartItem featureHash={featureHash} selectedOption={selectedOption} feature={feature} />
+          )})
+        }
+    
         <CartTotal selected={props.selected} />
       </section>
     )
-  })
-  )}
+}
 
 
 export default Cart;

@@ -8,18 +8,23 @@ function CustomizeItemName(props) {
   Object.keys(props.features).map((feature, idx) => {
     const featureHash = feature + '-' + idx;
     return (
-    props.features[feature].map(item => {
-      const itemHash = slugify(JSON.stringify(item));
-      return (
+   
         <fieldset className="feature" key={featureHash}>
           <legend className="feature__name">
             <h3>{feature}</h3>
           </legend>
+
+          {props.features[feature].map(item => {
+          const itemHash = slugify(JSON.stringify(item));
+          return (
           <CustomizeItemResult selected={props.selected} updateFeature={props.updateFeature} feature={feature} item={item} itemHash={itemHash} />
-        </fieldset>
+          )})}
+          </fieldset>
       );
     })
-  )})
   )}
+
+
+  
 
 export default CustomizeItemName;
