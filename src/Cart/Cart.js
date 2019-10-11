@@ -15,7 +15,7 @@ function Cart(props) {
           const selectedOption = props.selected[feature];
 
           return ( 
-          <CartItem featureHash={featureHash} selectedOption={selectedOption} feature={feature} />
+          <CartItem featureHash={featureHash} selectedOption={selectedOption} feature={feature} key={idx}/>
           )})
         }
     

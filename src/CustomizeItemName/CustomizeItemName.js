@@ -14,10 +14,10 @@ function CustomizeItemName(props) {
             <h3>{feature}</h3>
           </legend>
 
-          {props.features[feature].map(item => {
+          {props.features[feature].map((item, id) => {
           const itemHash = slugify(JSON.stringify(item));
           return (
-          <CustomizeItemResult selected={props.selected} updateFeature={props.updateFeature} feature={feature} item={item} itemHash={itemHash} />
+          <CustomizeItemResult selected={props.selected} updateFeature={props.updateFeature} feature={feature} item={item} itemHash={itemHash} key={id}/>
           )})}
           </fieldset>
       );
