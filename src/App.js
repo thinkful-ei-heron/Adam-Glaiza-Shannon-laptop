@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+import Cart from './Cart';
+import CartItem from './CartItem';
+import CartTotal from './CartTotal';
+import Customize from './Customize';
+import CustomizeItem from './CustomizeItem';
+
 
 // Normalizes string as a slug - a string that is safe to use
 // in both URLs and html attributes
